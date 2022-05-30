@@ -1,0 +1,299 @@
+body{
+  font-family: 'Ubuntu', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* navbar */
+
+#Home{
+  margin-bottom: 40px;
+}
+
+.bg-color{
+  background-color:rgb(24, 119, 242);
+  outline: 12px solid rgb(24, 119, 242);
+}
+
+.navbar .navbar-brand{
+  color:white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 2rem;
+}
+
+.navbar .navbar-nav .nav-link {
+      color:white;
+      padding: 5px 2rem;
+  }
+
+.navbar .navbar-nav .nav-link:hover{
+    color:aqua;
+}
+
+/* Home */
+.box{
+  margin-left:70px;
+  margin-top: 10rem;
+}
+
+.home-text{
+    letter-spacing: 2;
+  }
+
+.home-heading{
+  line-height:1.6;
+}
+
+.iste{
+  font-weight: bold;
+}
+
+.home-img{
+  width:500px;
+  height:450px;
+}
+
+/* animated text */
+.typewriter {
+    font-family: Courier, monospace;
+	  display: inline-block;
+}
+
+.typewriter-text {
+  color: rgb(24, 119, 242);
+    display: inline-block;
+  	overflow: hidden;
+  	letter-spacing: 2px;
+   	animation: typing 5s steps(30, end), blink .90s step-end infinite;
+    white-space: nowrap;
+    font-size: 25px;
+    font-weight: 700;
+    border-right: 4px solid rgb(24, 119, 242);
+    box-sizing: border-box;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+    to {
+        width: 100%
+    }
+}
+
+@keyframes blink {
+    from, to {
+        border-color: transparent
+    }
+    50% {
+        border-color: orange;
+    }
+}
+
+/* About */
+.about-container{
+  background-color:  rgb(24, 119, 242);
+}
+
+.about-img{
+  width:400px;
+  height:400px;
+  border-radius:20%;
+}
+
+.about-box{
+  padding-top:30px;
+  padding-bottom: 20px;
+}
+
+.about-heading{
+    color:white;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom:5px;
+}
+
+.about-text{
+    text-align: justify;
+    color:white;
+    line-height: 1.6;
+    letter-spacing: 2;
+    margin-right:10px;
+}
+
+/* Domains */
+.domain-container{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: rgba(17,163,221,.1);
+  padding-bottom:100px;
+}
+
+.domain-heading{
+  text-align: center;
+  color:#287bd3;
+  padding-bottom: 15px;
+  padding-top: 10px;
+}
+
+.domain-card-heading{
+  text-align: center;
+  color:rgb(24, 119, 242);
+}
+
+.domain-card-text{
+  text-align: center;
+  color:#fff;
+  padding:10px ;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color:#2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+/* Teams */
+.teams-container{
+    text-align: center;
+}
+
+.team-heading{
+    color:rgb(24, 119, 242);
+    padding:10px;
+}
+
+.card{
+  margin-bottom:10px;
+}
+
+a{
+  text-decoration: none;
+}
+
+.card-img-top{
+  width:190px;
+  height: 118.75px;
+}
+/* Works */
+
+.work-container{
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.works-text{
+  color:black;
+  text-align: justify;
+}
+
+.work-heading{
+  font-size: 1.8rem;
+  color:rgb(24, 119, 242);
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.Works-img{
+  width:200px;
+  height:200px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.box-1{
+  background-color: #D7E9F7;
+}
+.box-2{
+  background-color: #fff;
+}
+.box-3{
+  background-color: #D7E9F7;
+}
+
+
+/* Contacts */
+
+.contacts-container{
+  background-color: #CCF2F4;
+  padding-bottom: 20px;
+}
+
+.iste-modify{
+  color:rgb(24, 119, 242);
+  margin-left: 40px;
+}
+
+.contact-box{
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+.map{
+  margin-left: 30px;
+}
+
+
+
+/* Media Queries */
+@media (max-width:600px) {
+  .home-img{
+    width:300px;
+    height:300px;
+  }
+
+}
+
+@media (max-width:770px){
+  .teams-box{
+  margin-left: 100px;
+  margin-bottom: 10px;
+  }
+  .card{
+    margin:10px;
+  }
+}
+
+@media (max-width:990px){
+  .flip-card{
+    margin:30px;
+    padding-left: 50px;
+  }
+}
